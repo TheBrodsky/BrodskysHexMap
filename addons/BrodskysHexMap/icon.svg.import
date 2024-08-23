@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ds33kqkmx5ge3"
-path="res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex"
+path="res://.godot/imported/icon.svg-70f9042c296f22e94c94a64cfed627f6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://icon.svg"
-dest_files=["res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex"]
+source_file="res://addons/BrodskysHexMap/icon.svg"
+dest_files=["res://.godot/imported/icon.svg-70f9042c296f22e94c94a64cfed627f6.ctex"]
 
 [params]
 
