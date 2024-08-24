@@ -23,7 +23,7 @@ static func new_layout(orientation: Orientation, size: Vector2, origin: Vector2)
 
 
 ## helper func that sums a Vector2 because I can't believe GDScript doesn't already have this???
-static func sum_vec(vec: Vector2) -> int:
+static func sum_vec(vec: Vector2) -> float:
 	return vec.x + vec.y
 
 
@@ -60,13 +60,14 @@ func calc_hex_corner_offset(corner: int) -> Vector2:
 	return Vector2(size.x * cos(angle), size.y * sin(angle))
 
 
-## Returns an array of the positions (in pixel space) of the corners of a hex
+## Returns an array of the positions (in pixel space relative to center point) of the corners of a hex
 func calc_polygon_corners(hex: Hex) -> Array[Vector2]:
 	var corners: Array[Vector2] = []
-	var center: Vector2 = hex_to_pixel(hex)
 	for i in 6:
-		var offset: Vector2 = calc_hex_corner_offset(i)
-		corners.append(center + offset)
+		corners.append(calc_hex_corner_offset(i))
+		# In the RedBlobGames implementation, the pixel center is calculated and added here.
+		# In Godot, we can accomplish the same effect by keeping the corner offset relative to the center
+		# and just moving the drawn hexagon to the correct pixel center
 	return corners
 
 

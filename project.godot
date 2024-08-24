@@ -11,6 +11,6 @@ config_version=5
 [application]
 
 config/name="BrodskysHexMap"
-run/main_scene="res://addons/BrodskysHexMap/HexDraw.tscn"
+run/main_scene="res://addons/BrodskysHexMap/demo/HexDraw.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://addons/BrodskysHexMap/icon.svg"

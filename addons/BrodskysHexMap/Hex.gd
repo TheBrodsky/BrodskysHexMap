@@ -61,6 +61,7 @@ static func sum_vec(vec: Vector3) -> int:
 	return vec.x + vec.y + vec.z
 
 
+## Returns the equivalent axial coordinates of this Hex
 func get_axial() -> Vector2:
 	return Vector2(coords.x, coords.y)
 

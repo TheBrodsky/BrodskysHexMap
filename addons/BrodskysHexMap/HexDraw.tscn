@@ -1,9 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://dw65dp45o4o4q"]
-
-[ext_resource type="Script" path="res://addons/BrodskysHexMap/demo/hex_draw.gd" id="1_cqaiy"]
-
-[node name="HexDraw" type="Node2D"]
-script = ExtResource("1_cqaiy")
-
-[node name="Origin" type="Marker2D" parent="."]
-position = Vector2(560, 309)
