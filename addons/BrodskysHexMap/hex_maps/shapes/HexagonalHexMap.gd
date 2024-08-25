@@ -12,11 +12,6 @@ static func new_map(radius: int) -> HexagonalHexMap:
 	return hex_map
 
 
-## For Hexagonal maps, the map area is defined by 6 half-planes (1 for each side of the hexagon-shaped map).
-## We pair these half-planes up by axis (3 axies in cube coordinates: q,r,s). A pair is the half-planes on opposite sides.
-## We only actually care about 2 of these pairs because the 3rd can be inferred by converting from axial to cube coordinates.
-## In the end, each hexagon satisfies each of the 6 inequalities represented by the 6 half-planes
-## (ie each hexagon lies within an area bound by all 6 half-planes).
 func _populate_map() -> void:
 	for q in range(-radius, radius+1): # -radius - radius, inclusive
 		var r1: int = max(-radius, -q - radius)

@@ -16,7 +16,6 @@ static func new_map(side_length: int, direction: Direction) -> TriangleHexMap:
 	return hex_map
 
 
-## Abstract method that MUST be implemented by maps which extend HexMap. Populates the map with Hexes.
 func _populate_map() -> void:
 	if direction == Direction.RIGHT_OR_UP:
 		for q in side_length:
