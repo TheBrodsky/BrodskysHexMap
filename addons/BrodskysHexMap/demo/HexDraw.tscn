@@ -5,12 +5,21 @@
 [sub_resource type="CircleShape2D" id="CircleShape2D_r2fu7"]
 radius = 40.0
 
-[node name="DemoMap" type="Node2D"]
+[node name="DemoMap" type="Node2D" node_paths=PackedStringArray("line_style")]
 script = ExtResource("1_uoflw")
+orientation = 1
+primary_axes = 1
+line_style = NodePath("MapStyle")
+metadata/_edit_lock_ = true
 
 [node name="Origin" type="Marker2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Origin"]
 shape = SubResource("CircleShape2D_r2fu7")
+metadata/_edit_lock_ = true
 
 [node name="Camera2D" type="Camera2D" parent="."]
+metadata/_edit_lock_ = true
+
+[node name="MapStyle" type="Line2D" parent="."]
+width = 3.0
