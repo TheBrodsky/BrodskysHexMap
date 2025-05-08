@@ -38,6 +38,3 @@ A class used to actually draw hexagons.
 If all you need to do is draw a hex map, this can do it for you. 
 But if you need to store data alongside those hexes, you'll need to either set up another data structure that maps cube coordinates to your data, or you'll need to make a class which inherits from Hex (or possibly HexMap) that stores that data. 
 This addon is meant to be a common foundation for all HexMap-related applications rather than a singular solution to them.
-
-## Methods
-Instead of documenting methods here, which would be exhausting, I did my best to make sure that methods each have documentation comments, descriptive names, and static typing. If you want to know what a method does, you should be able to tell by looking at its signature + doc comment.
