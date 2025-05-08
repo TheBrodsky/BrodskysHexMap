@@ -1,4 +1,7 @@
 # Brodsky's Hex Map
+
+**No longer being actively developed.** This was built to support a game project of mine, which is no longer being developed, and thus this hex map addon is also no longer being developed.
+
 An addon for generating hex maps in Godot. This addon is based on the implementation of HexMaps by RedBlobGames, found here https://www.redblobgames.com/grids/hexagons/implementation.html.
 
 There are other addons that do this same thing, but I wasn't satisfied with the level of documentation and organization and thus decided to make my own. 
